@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+pre_build:
+commands:
+- ls -lrth
+build:
+commands:
+- ls -lrth
+artifacts:
+files:
+- '**/*'
