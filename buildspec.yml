@@ -1,11 +1,15 @@
 version: 0.2
+
 phases:
-pre_build:
-commands:
-- ls -lrth
-build:
-commands:
-- ls -lrth
-artifacts:
-files:
-- '**/*'
+  install: 
+    runtime-versions:
+      php: 7.2
+  pre_build: # commands to be run before build
+    commands:
+    - ls -lrth
+  build:
+    commands:
+    - ls -lrth
+  post_build:
+    commands:
+      - **/*
