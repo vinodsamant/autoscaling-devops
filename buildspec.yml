@@ -12,4 +12,4 @@ phases:
     - ls -lrth
   post_build:
     commands:
-      - **/*
+    - **/*
